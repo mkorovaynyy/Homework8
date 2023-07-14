@@ -1,5 +1,6 @@
 import Service.ArrayCreatorForHw;
-import Service.ArrayReverserForHw;
+import Service.ArrayPrintForHw;
+import Service.ArrayPrintReverserForHw;
 
 import java.util.Arrays;
 
@@ -24,9 +25,10 @@ public class Main {
         int[] array1 = ArrayCreatorForHw.createIntArray();
         double[] array2 = ArrayCreatorForHw.createDoubleArray();
         int[] array3 = ArrayCreatorForHw.createRndIntArray();
-        System.out.println(Arrays.toString(array1));
-        System.out.println(Arrays.toString(array2));
-        System.out.println(Arrays.toString(array3));
+        ArrayPrintForHw.printArray(array1);
+        ArrayPrintForHw.printArray(array2);
+        ArrayPrintForHw.printArray(array3);
+
     }
 
     public static void task3() {
@@ -34,9 +36,10 @@ public class Main {
         int[] array1 = ArrayCreatorForHw.createIntArray();
         double[] array2 = ArrayCreatorForHw.createDoubleArray();
         int[] array3 = ArrayCreatorForHw.createRndIntArray();
-        System.out.println(Arrays.toString(ArrayReverserForHw.reverseArray(array1)));
-        System.out.println(Arrays.toString(ArrayReverserForHw.reverseArray(array2)));
-        System.out.println(Arrays.toString(ArrayReverserForHw.reverseArray(array3)));
+        ArrayPrintReverserForHw.printReverseArray(array1);
+        ArrayPrintReverserForHw.printReverseArray(array2);
+        ArrayPrintReverserForHw.printReverseArray(array3);
+
     }
 
     public static void task4() {
